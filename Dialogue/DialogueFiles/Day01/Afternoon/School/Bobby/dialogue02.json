@@ -1,0 +1,75 @@
+{
+    "Type": 1
+    , "Text": "Hey Jim, how's it going?"
+    , "Emotion" : "Neutral"
+    , "SpeakerName" : "Bobby"
+    , "NextDialogueNode":
+    {
+        "Type": 2
+        ,"Text" : "Not bad Bobby - How are you?"
+        , "Emotion" : "Neutral"
+        , "SpeakerName": "Jim"
+        , "DialogueOptions": [
+            {
+                
+                "Text": "I'm good",
+                "ResponseDialogueNode" : 
+                {
+                    "Type": 1
+                    , "Text" : "That's good bro"
+                    , "Emotion" : "happy"
+                    , "SpeakerName" : "Jim"
+                    , "NextDialogueNode" : {
+                        "Type" : 2
+                        , "Text" : "Yeah... so did you wanna get pizza???"
+                        , "Emotion" : "Happy"
+                        , "SpeakerName" : "Bobby"
+                        , "DialogueOptions" :[
+                            {
+                                "Text" : "Yes Dude"
+                                , "ResponseDialogueNode" : 
+                                {
+                                    "Type" : 1
+                                    , "Text" : "Sweeeet. Let's get going"
+                                    , "Emotion" : "Happy"
+                                    , "SpeakerName" : "Bobby"
+                                }
+                            },
+                            {
+                                "Text" : "Sorry Dude, can we go another time"
+                                , "ResponseDialogueNode" :
+                                {
+                                    "Type" : 1
+                                    , "Text" : "Yeah man... haha... no problem...."
+                                    , "Emotion" : "Sad"
+                                    , "SpeakerName" : "Bobby"
+                                    , "NextDialogueNode": 
+                                    {
+                                        "Type" : 1
+                                        , "Text": "Sorry bobby, I'll make it up to you tomorrow :)"
+                                        , "Emotion" : "Happy"
+                                        , "SpeakerName" : "Jim"
+                                        
+                                    }
+                                }
+                            }
+                        ]
+                    
+                    }
+                }
+            },
+            {
+                
+                "Text" : "Not doing too good...",
+                "ResponseDialogueNode" :{
+                    "Type" : 1
+                    , "Text" : "Aw man. that sucks"
+                    , "Emotion" : "sad"
+                    , "SpeakerName": "Jim"
+                }
+            }
+        ] 
+        
+    }
+
+}

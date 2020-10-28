@@ -1,0 +1,35 @@
+{
+    "Type": 1
+    , "Text": "Hey Jim, how's it going?"
+    , "Emotion" : "Neutral"
+    , "SpeakerName" : "Bobby"
+    , "NextDialogueNode":
+    {
+        "Type": 1
+        ,"Text" : "Not bad Bobby - What can I do for ya?"
+        , "Emotion" : "Neutral"
+        , "SpeakerName": "Jim"
+        , "NextDialogueNode": 
+        {
+            "Type": 1
+            ,"Text": "Nothing, just wanted to see what's up."
+           , "Emotion" : "Neutral"
+            , "SpeakerName": "Bobby"
+            , "NextDialogueNode" :
+            {
+                "Type": 1
+                ,"Text" : "Cool Cool. Well let me know if you need anything else"
+                , "Emotion" : "Neutral"
+                ,"SpeakerName" : "Jim"
+                , "NextDialogueNode" : 
+                {
+                    "Type": 1
+                    ,"Text" : "Will Do..."
+                    , "Emotion" : "Neutral"
+                    , "SpeakerName" : "Jim"
+                }
+            }
+        }
+    }
+
+}
